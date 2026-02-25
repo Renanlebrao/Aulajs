@@ -13,4 +13,7 @@ document .write ("<h1>olá, seja bem vindo ao javascript ")
 document . write ( nome + "<br>" );
 document . write ( idade + "<br>" )
 document . write ( altura + "<br>" );
-document . write "< p style= color : red > "
+
+
+var dias = idade *365
+document.write ()
