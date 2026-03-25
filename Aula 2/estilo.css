@@ -1,6 +1,6 @@
 h1
 {
-    background-color: red;
+    background-color: #f5f7fa;
     color: black;
     margin: 0px;
     padding: 20px;
@@ -10,17 +10,16 @@ h1
 body{
     margin: 0px;
     padding: 0px;
-    background-color: lightcoral;
+    background-color: #f3e5f5;
 
 }
 
-conteudo{
+.conteudo{
     margin: 20px;
-    border: 1px solid ;
-    width: 500px;
+    border: 1px solid;
+    width: 800px;
     padding: 20px;
     box-shadow: 0 10px 10px gray;
-
 }
 
 .conteudo{
