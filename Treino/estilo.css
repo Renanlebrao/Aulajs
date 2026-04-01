@@ -1,0 +1,19 @@
+
+.h1
+{
+   background-color: blueviolet;
+   font-size: larger;
+   font-style: italic;
+   border: 100px;
+   text-align: center;
+   align-items: center;
+   border-radius: 100px;
+}
+
+.p
+{
+    font-style: bold;
+    font-size: medium;
+    text-align: justify;
+    
+}
