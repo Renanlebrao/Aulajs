@@ -1,20 +1,22 @@
-// Função para calcular a área de um triângulo dado base e altura
-function calcularArea(base, altura) {
-    return (base * altura) / 2;
-}
-
-// Função para calcular a altura de um triângulo dado base e área
-function calcularAltura(base, area) {
-    return (2 * area) / base;
+function calcularSalarioLiquido(salarioBruto, gastosMensais) {
+    const aliquotaIR = 0.15; // 15% de imposto de renda
+    const aliquotaINSS = 0.08; // 8% de INSS
+    
+    const impostos = salarioBruto * (aliquotaIR + aliquotaINSS);
+    const salarioLiquido = salarioBruto - impostos - gastosMensais;
+    
+    console.log(`Salário Bruto: R$ ${salarioBruto.toFixed(2)}`);
+    console.log(`Impostos (IR + INSS): R$ ${impostos.toFixed(2)}`);
+    console.log(`Gastos Mensais: R$ ${gastosMensais.toFixed(2)}`);
+    console.log(`Salário Líquido: R$ ${salarioLiquido.toFixed(2)}`);
+    
+    return {
+        salarioBruto,
+        impostos,
+        gastosMensais,
+        salarioLiquido
+    };
 }
 
 // Exemplo de uso
-const base = 10; // Exemplo de base
-const altura = 5; // Exemplo de altura
-const area = calcularArea(base, altura);
-console.log(`Área: ${area}`);
-
-// Ou, se quiser calcular altura a partir de base e área
-const areaConhecida = 25; // Exemplo de área conhecida
-const alturaCalculada = calcularAltura(base, areaConhecida);
-console.log(`Altura: ${alturaCalculada}`);
+calcularSalarioLiquido(3000, 1200);
